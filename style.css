@@ -1,0 +1,210 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    /* box-sizing: border-box; */
+  }
+
+
+  .main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+  }
+
+  .box {
+    width: 700px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 5px 5px 20px  hsla(241, 72%, 46%, 0.2);
+
+  }
+
+  .child1 {
+    width: 50%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px 70px;
+    border-radius: 30px;
+
+  }
+
+
+
+  .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin: 30px auto;
+
+  }
+
+  .child1 p:nth-child(1){
+    font-weight: 600;
+    font-size: 20px;
+    color: hsl(241, 100%, 89%);
+  }
+
+  h2:nth-child(1){
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .child1 p:nth-child(2) {
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 600;
+  }
+
+  h2.great{
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+
+  }
+
+
+  .great + p {
+
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 600;
+
+  }
+
+  /* ----------------------------- Second Chld element------------------------------ */
+
+
+  .child2 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px;
+
+    /* flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 1; */
+
+  }
+
+  .child2 p:nth-child(1) {
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .child2 .content-box .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .child2 .content-box .content div {
+    display: flex;
+    align-items: center;
+  }
+
+  .child2 .content-box .content div:nth-child(1) p{
+
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+
+  /* Adding color and background Color in the content box */
+
+  .child2 .content-box .content:nth-child(1) {
+    background-color: hsl(0, 100%, 98%);
+  }
+
+  .child2 .content-box .content:nth-child(1) div:nth-child(1) p{
+    color: hsl(0, 80%, 67%);
+  }
+
+
+  .child2 .content-box .content:nth-child(2) {
+    background-color: hsl(39, 100%, 98%);
+  }
+
+  .child2 .content-box .content:nth-child(2) div:nth-child(1) p{
+    color: hsl(39, 100%, 56%);
+  }
+
+
+  .child2 .content-box .content:nth-child(3) {
+    background-color: hsl(166, 100%, 98%);
+  }
+
+  .child2 .content-box .content:nth-child(3) div:nth-child(1) p{
+    color: hsl(166, 100%, 37%);
+  }
+
+  .child2 .content-box .content:nth-child(4) {
+    background-color: hsl(234, 85%, 98%);
+  }
+
+  .child2 .content-box .content:nth-child(4) div:nth-child(1) p{
+    color: hsl(221, 100%, 45%);
+  }
+
+  .child2 .content-box .content p span {
+    color: hsl(224, 30%, 70%);
+    padding-left: 10px;
+  }
+
+
+
+  .child2 button {
+    width: 100%;
+    padding: 17px;
+    background-color: #303B59;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+
+  }
+
+  .child2 button:hover {
+    background-color: hsl(241, 81%, 54%);
+  }
+
+
+  @media screen and (max-width : 550px){
+    .box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .box .child1, .box .child2 {
+      width: 100%;
+    }
+
+    .box .child1 {
+      border-radius: 0 0 30px 30px;
+    }
+
+  }
